@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO insert meta info -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>C.A.R.E.</title>
+
+    <!-- Bootstrap  CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- Local CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">C.A.R.E.</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li class="active"><a href="#">Adoptable Pets</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Links<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://www.petfinder.com/pet-search?shelterid=VA601" target="_blank">Petfinder</a></li>
+                <li><a href="https://www.facebook.com/pages/CARE-Capital-Area-Rescue-Effort-Inc/104177699668415?ref=br_tf" target="_blank">Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="featurette-heading">Adoptable Pets</h2>
+          <iframe style="width: 700px; height: 600px; margin: 0;" src="https://fpm.petfinder.com/petlist/petlist.cgi?shelter=VA601&status=A&age=&limit=25&offset=0&animal=&title=&style=20&ref=_x1q4eXN3bjS5R8" width="700px" height="600px" hspace="0" vspace="0"  frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" bordercolor="#000000"></iframe>        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>&copy; Capital Area Rescue Effort &middot; P.O. Box 575 &middot; Sandston, VA 23150</p>
+      </footer>
+
+    </div><!-- /.container -->
+  </body>
+</html>

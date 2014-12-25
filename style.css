@@ -65,6 +65,11 @@ body {
   letter-spacing: -1px;
 }
 
+/* content on secondary pages */
+.content {
+  margin-top: 60px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
