@@ -38,6 +38,11 @@ function extractData_(petApiData) {
       photo: photo
     });
   }
+  petData.sort(function(a, b) {
+    if (a.name < b.name) return -1;
+    if (a.name === b.name) return 0;
+    return 1;
+  });
   renderPets_(petData);
 }
 
