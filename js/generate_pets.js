@@ -44,9 +44,11 @@ function extractData_(petApiData) {
 function renderPets_(petData) {
   var currentRow;
   for (var i = 0; i < petData.length; i++) {
+    // Add new row
     if (i % 4 === 0) {
       currentRow = $("#inner-container").append("<div class=\"row\">");
     }
+    // Add column for dog
     currentRow.append(
       "<div class=\"col-lg-3\">" +
       "<p><img class=\"featurette-image img-responsive\" src=" + petData[i].photo + "></p>" +
@@ -56,10 +58,19 @@ function renderPets_(petData) {
       "<p class=\"lead\"><a href=\"https://www.petfinder.com/petdetail/" + petData[i].id + "\" target=\"_blank\">More information</a></p>" +
       "</div>"
     );
+    // End row
     if (i % 4 === 3) {
       $("#inner-container").append("</div>");
     }
   }
+  // Finish columns and row if needed
+  if (petData.length % 4 === 0) {
+    return;
+  }
+  for (var i = petData.length % 4; i < 4; i++) {
+    currentRow.append("<div class=\"col-lg-3\"></div>");
+  }
+  $("#inner-container").append("</div>");
 }
 
 function embedPetfinderIframe_(err) {
